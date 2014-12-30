@@ -6,4 +6,4 @@ ENV LEIN_ROOT true
 
 RUN wget -q -O /usr/bin/lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
 RUN chmod 755 /usr/bin/lein
-RUN /usr/bin/lein
+RUN /usr/bin/lein > /dev/null 2>/dev/null
